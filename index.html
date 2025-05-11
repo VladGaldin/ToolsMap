@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3b886a79be92257813ac65d9382a46bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3b886a79be92257813ac65d9382a46bd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3b886a79be92257813ac65d9382a46bd = L.map(
+                "map_3b886a79be92257813ac65d9382a46bd",
+                {
+                    center: [47.2, 32.7],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c9ddff8099937ed50a719cd59d7c06c = L.tileLayer(
+                "https://{s}.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}\u0026hl=en\u0026gl=us",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u00a9 Google",
+  "subdomains": [
+"mt0",
+"mt1",
+"mt2",
+"mt3",
+],
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2c9ddff8099937ed50a719cd59d7c06c.addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+            var tile_layer_0b1a7293540d89c317e0bf95881b3d3a = L.tileLayer(
+                "https://{s}.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}\u0026hl=en\u0026gl=us",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u00a9 Google",
+  "subdomains": [
+"mt0",
+"mt1",
+"mt2",
+"mt3",
+],
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0b1a7293540d89c317e0bf95881b3d3a.addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+            var circle_marker_9827aa4bb8db0d2d6b378d3cc72190bf = L.circleMarker(
+                [46.78837593, 32.34326133],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_983ddf5cc7f1f6d9953b21cb0462f449 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55fe791f446ec096ac82f761e29bf6a1 = $(`<div id="html_55fe791f446ec096ac82f761e29bf6a1" style="width: 100.0%; height: 100.0%;"><b>Flamingo</b><br>Settlement: Blahodatne<br>Region: Kherson<br>Items: 12</div>`)[0];
+                popup_983ddf5cc7f1f6d9953b21cb0462f449.setContent(html_55fe791f446ec096ac82f761e29bf6a1);
+            
+        
+
+        circle_marker_9827aa4bb8db0d2d6b378d3cc72190bf.bindPopup(popup_983ddf5cc7f1f6d9953b21cb0462f449)
+        ;
+
+        
+    
+    
+            var circle_marker_aa4cca9b441d967ee04c6f631e03d808 = L.circleMarker(
+                [47.17333288, 33.4228465],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_e0f0a3eb48ac2c23b35a5762af5348c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48356eae0e4450236d59c8f014651e42 = $(`<div id="html_48356eae0e4450236d59c8f014651e42" style="width: 100.0%; height: 100.0%;"><b>Vodoliy and Co</b><br>Settlement: Borozenske<br>Region: Kherson<br>Items: 16</div>`)[0];
+                popup_e0f0a3eb48ac2c23b35a5762af5348c1.setContent(html_48356eae0e4450236d59c8f014651e42);
+            
+        
+
+        circle_marker_aa4cca9b441d967ee04c6f631e03d808.bindPopup(popup_e0f0a3eb48ac2c23b35a5762af5348c1)
+        ;
+
+        
+    
+    
+            var circle_marker_c9a8b83ff40e6a140740fc8b6b6ca408 = L.circleMarker(
+                [47.11449627, 32.97448943],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_26b108ce3f0aa12a525fbdae1025e7c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af9674e4015fe1b1beedb6f206c9bbb1 = $(`<div id="html_af9674e4015fe1b1beedb6f206c9bbb1" style="width: 100.0%; height: 100.0%;"><b>Kalininskyi Combine of Utility Companies</b><br>Settlement: Kalynivske<br>Region: Kherson<br>Items: 16</div>`)[0];
+                popup_26b108ce3f0aa12a525fbdae1025e7c1.setContent(html_af9674e4015fe1b1beedb6f206c9bbb1);
+            
+        
+
+        circle_marker_c9a8b83ff40e6a140740fc8b6b6ca408.bindPopup(popup_26b108ce3f0aa12a525fbdae1025e7c1)
+        ;
+
+        
+    
+    
+            var circle_marker_99dfe53f9fe146919007c77f6380f43f = L.circleMarker(
+                [46.70652974, 32.3587647],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_cfd47efbb2b59f1a975e19a99f50c0f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dec422fd647d3dc172fb109b32b1e0f = $(`<div id="html_0dec422fd647d3dc172fb109b32b1e0f" style="width: 100.0%; height: 100.0%;"><b>Nadiya</b><br>Settlement: Nadezhdivka<br>Region: Kherson<br>Items: 7</div>`)[0];
+                popup_cfd47efbb2b59f1a975e19a99f50c0f9.setContent(html_0dec422fd647d3dc172fb109b32b1e0f);
+            
+        
+
+        circle_marker_99dfe53f9fe146919007c77f6380f43f.bindPopup(popup_cfd47efbb2b59f1a975e19a99f50c0f9)
+        ;
+
+        
+    
+    
+            var circle_marker_e2c4eb162ca4c5446a6cd293b0b18d00 = L.circleMarker(
+                [47.3377, 33.2926],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_ed470ad8fd18a035042069a01114c3e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58488485dd62d85bb0a75494db5cba2c = $(`<div id="html_58488485dd62d85bb0a75494db5cba2c" style="width: 100.0%; height: 100.0%;"><b>Comservice Vodocanal</b><br>Settlement: Velyka Oleksandrivka<br>Region: Kherson<br>Items: 28</div>`)[0];
+                popup_ed470ad8fd18a035042069a01114c3e2.setContent(html_58488485dd62d85bb0a75494db5cba2c);
+            
+        
+
+        circle_marker_e2c4eb162ca4c5446a6cd293b0b18d00.bindPopup(popup_ed470ad8fd18a035042069a01114c3e2)
+        ;
+
+        
+    
+    
+            var circle_marker_b27568516bc04fdc048ac52075d8a413 = L.circleMarker(
+                [47.2683, 32.8498],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_68a4c940ddfb6e7f4a6b1d5777b5ca35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54a66625dae4e271f89879fe55e529ee = $(`<div id="html_54a66625dae4e271f89879fe55e529ee" style="width: 100.0%; height: 100.0%;"><b>Posluhy-2</b><br>Settlement: Bereznehuvate<br>Region: Mykolaiv<br>Items: 14</div>`)[0];
+                popup_68a4c940ddfb6e7f4a6b1d5777b5ca35.setContent(html_54a66625dae4e271f89879fe55e529ee);
+            
+        
+
+        circle_marker_b27568516bc04fdc048ac52075d8a413.bindPopup(popup_68a4c940ddfb6e7f4a6b1d5777b5ca35)
+        ;
+
+        
+    
+    
+            var circle_marker_28050a7fa6b69389e427a7d8d9b29f46 = L.circleMarker(
+                [47.09482767, 31.91655448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_bd168f3657c3d1f6cb4787958a7c61b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb09b8aff6513aebc2d3eda963ed90cb = $(`<div id="html_eb09b8aff6513aebc2d3eda963ed90cb" style="width: 100.0%; height: 100.0%;"><b>Dobrobut</b><br>Settlement: Kostiantynivka<br>Region: Mykolaiv<br>Items: 3</div>`)[0];
+                popup_bd168f3657c3d1f6cb4787958a7c61b5.setContent(html_eb09b8aff6513aebc2d3eda963ed90cb);
+            
+        
+
+        circle_marker_28050a7fa6b69389e427a7d8d9b29f46.bindPopup(popup_bd168f3657c3d1f6cb4787958a7c61b5)
+        ;
+
+        
+    
+    
+            var circle_marker_8ec94a1ee7725ed0ce58451e475c6e72 = L.circleMarker(
+                [47.17232361, 31.75955978],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_2f466bb2f931417f0bb02b5be128ccaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43cc08ac06a84a33df06c3c3d1ddc10f = $(`<div id="html_43cc08ac06a84a33df06c3c3d1ddc10f" style="width: 100.0%; height: 100.0%;"><b>Olshanske</b><br>Settlement: Olshanske<br>Region: Mykolaiv<br>Items: 3</div>`)[0];
+                popup_2f466bb2f931417f0bb02b5be128ccaa.setContent(html_43cc08ac06a84a33df06c3c3d1ddc10f);
+            
+        
+
+        circle_marker_8ec94a1ee7725ed0ce58451e475c6e72.bindPopup(popup_2f466bb2f931417f0bb02b5be128ccaa)
+        ;
+
+        
+    
+    
+            var circle_marker_8a0b66a8c0d8d1b23d3223167b7dc349 = L.circleMarker(
+                [46.975834, 32.124586],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_fcf37126106eec9c460a54a66a9d6522 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4934e1d26f9baf57a7f107ea6652b2b1 = $(`<div id="html_4934e1d26f9baf57a7f107ea6652b2b1" style="width: 100.0%; height: 100.0%;"><b>Mriia-t</b><br>Settlement: Polihon<br>Region: Mykolaiv<br>Items: 7</div>`)[0];
+                popup_fcf37126106eec9c460a54a66a9d6522.setContent(html_4934e1d26f9baf57a7f107ea6652b2b1);
+            
+        
+
+        circle_marker_8a0b66a8c0d8d1b23d3223167b7dc349.bindPopup(popup_fcf37126106eec9c460a54a66a9d6522)
+        ;
+
+        
+    
+    
+            var circle_marker_56b65331ea9378ed944ad8d31a80c9dc = L.circleMarker(
+                [46.85909618, 32.20885948],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_e1e293cb5520e5a7b330d3b8bff0b428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3785cd6582cb57767acdef5df5349007 = $(`<div id="html_3785cd6582cb57767acdef5df5349007" style="width: 100.0%; height: 100.0%;"><b>Dobrobut</b><br>Settlement: Shevchenkove<br>Region: Mykolaiv<br>Items: 26</div>`)[0];
+                popup_e1e293cb5520e5a7b330d3b8bff0b428.setContent(html_3785cd6582cb57767acdef5df5349007);
+            
+        
+
+        circle_marker_56b65331ea9378ed944ad8d31a80c9dc.bindPopup(popup_e1e293cb5520e5a7b330d3b8bff0b428)
+        ;
+
+        
+    
+    
+            var circle_marker_b444e77c8cc300ebd16cb697b52b1383 = L.circleMarker(
+                [47.01091445, 32.1445031],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+        
+    
+        var popup_95914360796f40d3306e74f7ff23ea67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07b5557352ef84afe815031b7ffef09d = $(`<div id="html_07b5557352ef84afe815031b7ffef09d" style="width: 100.0%; height: 100.0%;"><b>Voskresenske Communal Enterprise</b><br>Settlement: Voskresenske<br>Region: Mykolaiv<br>Items: 8</div>`)[0];
+                popup_95914360796f40d3306e74f7ff23ea67.setContent(html_07b5557352ef84afe815031b7ffef09d);
+            
+        
+
+        circle_marker_b444e77c8cc300ebd16cb697b52b1383.bindPopup(popup_95914360796f40d3306e74f7ff23ea67)
+        ;
+
+        
+    
+    
+            var layer_control_1e1d43fbd4fc9d56bb58f51a8ffb4309_layers = {
+                base_layers : {
+                    "Google Satellite (EN)" : tile_layer_2c9ddff8099937ed50a719cd59d7c06c,
+                    "Google Streets (EN)" : tile_layer_0b1a7293540d89c317e0bf95881b3d3a,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_1e1d43fbd4fc9d56bb58f51a8ffb4309 = L.control.layers(
+                layer_control_1e1d43fbd4fc9d56bb58f51a8ffb4309_layers.base_layers,
+                layer_control_1e1d43fbd4fc9d56bb58f51a8ffb4309_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_3b886a79be92257813ac65d9382a46bd);
+
+        
+</script>
+</html>
